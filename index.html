@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang = "en">
+<link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Daily Update</title>
+</head>
+
+<nav>
+    <h1>Home</h1>
+</nav>
+
+<ul>
+    <a href="News.html"><img src="news.jpg"></a>
+    <a href="Weathers.html">The Weather</a>
+    <a href="TV.html">TV & Movies</a>
+</ul>
+
+<body>
+  <p>Remember to subscribe to our content!</p>
+  <form action = "/subscription" method = "post">
+    <label for = "name"> Name: </label>
+    <input type = "text" name = "name" id = "name">
+
+    <label for = "email"> Email: </label>
+    <input type = "email" name = "email" id = "email">
+
+    <input type = "submit" value = "Send!">
+  </form>
+</body>
+
+</html>
