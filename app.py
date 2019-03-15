@@ -34,4 +34,5 @@ def subscribe():
     send_email(data['email'], data['name'])
     return render_template("subscription.html", form_data = data)
 
-app.run(debug = True)
+if __name__ == '__main__':
+    app.run(debug = True)
